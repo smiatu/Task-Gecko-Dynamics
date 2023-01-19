@@ -1,0 +1,96 @@
+@import 'variables.scss';
+
+.main {
+  height: calc(100% - 4.625rem);
+  background-color: $brand-dark-blue;
+  background-image: url("../assets/backgrounds/background_main.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+  display: flex;
+  color: white;
+  &__section {
+    &--left {
+      padding-left: 6.25rem;
+      width: 100%;
+      @media only screen and (min-width: 1020px) {
+        width: 50%;
+      }
+      header {
+        font-size: 3rem;
+        @media only screen and (min-width: 600px) {
+          font-size: 4rem;
+        }
+        @media only screen and (min-width: 1020px) {
+          font-size: 5.313rem;
+        }
+        font-weight: 800;
+      }
+      p {
+        opacity: 0.8;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+      }
+    }
+    &--right {
+      padding: 2rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+.brand-decorator {
+  &--left {
+    display: none;
+    @media only screen and (min-width: 1020px) {
+      display: inline-block;
+    }
+    border-radius: 0 6.25rem;
+    border: solid 6px $brand-yellow;
+    width: 20.938rem;
+    height: 27.375rem;
+    position: relative;
+    .brand-decorator__overflow-image {
+      border-radius: 0 6.25rem;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0.938rem;
+      left: 0.938rem;
+      background-image: url("../assets/image 88.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      &::before {
+        content: '';
+        background-image: url("../assets/2 19.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 16.25rem;
+        height: 9.875rem;
+        position: absolute;
+        bottom: 6.438rem;
+        left: -7rem;
+      }
+      &::after {
+        content: '';
+        background-image: url("../assets/Dashboard – Alarms & Troubles 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 14.5rem;
+        height: 9.125rem;
+        position: absolute;
+        bottom: -1rem;
+        right: -4.688rem;
+      }
+    }
+  }
+  display: none;
+  @media only screen and (min-width: 1020px) {
+    display: inline-block;
+  }
+}
+
+

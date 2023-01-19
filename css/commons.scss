@@ -1,0 +1,53 @@
+@import "variables";
+
+.button {
+  &--branded {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+    text-align: center;
+    letter-spacing: -0.02em;
+    background-color: $brand-yellow;
+    border: none;
+    border-radius: 0 1.875rem;
+    color: $brand-dark-blue;
+    padding: 1.313rem 2.5rem;
+    width: 11.25rem;
+    height: 4.063rem;
+  }
+  &--reference {
+    margin-top: 2.188rem;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 1.063rem;
+  }
+}
+
+.tag {
+  &--prize {
+    margin-top: 5%;
+    position: relative;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 1rem;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: " ";
+      background-color: white;
+      opacity: 0.05;
+      border-radius: 0.625rem;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

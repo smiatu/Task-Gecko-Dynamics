@@ -1,0 +1,187 @@
+@import "variables";
+
+.details {
+  background-color: $background-grey;
+  background-image: url("../assets/backgrounds/RectangleBG-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  padding: 3.125rem;
+  @media only screen and (min-width: 1360px) {
+    padding: 6.25rem;
+  }
+  display: grid;
+  justify-items: center;
+  grid-gap: 1.5rem;
+  grid-template-columns: [col1-start] 100%  [col1-end];
+  grid-template-rows: [row1-start] 13rem [row2-start] 13rem [row3-start] 13rem [row4-start] 13rem [row5-start] 13rem [row6-start] 13rem [row7-start] 13rem [row-end];
+  @media only screen and (min-width: 830px) {
+    grid-template-columns: [col1-start] 50%  [col2-start] 50%  [col2-end];
+    grid-template-rows: [row1-start] 13rem [row2-start] 13rem [row3-start] 13rem [row4-start] 13rem [row4-end];
+  }
+  @media only screen and (min-width: 1180px) {
+    grid-template-columns: [col1-start] 33%  [col2-start] 33%  [col3-start] 33% [col3-end];
+    grid-template-rows: [row1-start] 13rem [row2-start] 13rem [row3-start] 13rem [row3-end];
+  }
+  @media only screen and (min-width: 1360px) {
+    grid-template-columns: [col1-start] 25%  [col2-start] 25%  [col3-start] 25% [col4-start] 25% [col4-end];
+    grid-template-rows: [row1-start] 13rem [row2-start] 13rem [row2-end];
+  }
+  &__box {
+    background-color: white;
+    color: $brand-dark-blue;
+    padding: 2.5rem 2rem;
+    cursor: pointer;
+    border: 2px solid $grey;
+    border-radius: 1.25rem;
+    width: fit-content;
+    min-width: 18.25rem;
+    max-width: 22.5rem;
+    &:hover {
+      border: 2px solid $brand-yellow;
+    }
+    &:active {
+      border: 2px solid $brand-blue;
+    }
+    &--header {
+      background-color: transparent;
+      font-size: 3rem;
+      font-weight: 800;
+      border: none;
+      cursor: default;
+      &:hover {
+        border: none;
+      }
+      &:active {
+        border: none;
+      }
+
+      grid-column: col1-start;
+      grid-row: row1-start;
+      @media only screen and (min-width: 830px) {
+        grid-column: col1-start / col2-end;
+        grid-row: row1-start;
+      }
+      @media only screen and (min-width: 1180px) {
+        grid-column: col1-start / col3-end;
+        grid-row: row1-start;
+      }
+      @media only screen and (min-width: 1360px) {
+        grid-column: col1-start / col3-start;
+        grid-row: row1-start;
+      }
+    }
+    &--a {
+      grid-column: col1-start;
+      grid-row: row2-start;
+      @media only screen and (min-width: 830px) {
+        grid-column: col1-start;
+        grid-row: row2-start;
+      }
+      @media only screen and (min-width: 1180px) {
+        grid-column: col1-start;
+        grid-row: row2-start;
+      }
+      @media only screen and (min-width: 1360px) {
+        grid-column: col3-start;
+        grid-row: row1-start;
+      }
+    }
+    &--b {
+      grid-column: col1-start;
+      grid-row: row3-start;
+      @media only screen and (min-width: 830px) {
+        grid-column: col2-start;
+        grid-row: row2-start;
+      }
+      @media only screen and (min-width: 1180px) {
+        grid-column: col2-start;
+        grid-row: row2-start;
+      }
+      @media only screen and (min-width: 1360px) {
+        grid-column: col4-start;
+        grid-row: row1-start;
+      }
+    }
+    &--c {
+      grid-column: col1-start;
+      grid-row: row4-start;
+      @media only screen and (min-width: 830px) {
+        grid-column: col1-start;
+        grid-row: row3-start;
+      }
+      @media only screen and (min-width: 1180px) {
+        grid-column: col3-start;
+        grid-row: row2-start;
+      }
+      @media only screen and (min-width: 1360px) {
+        grid-column: col1-start;
+        grid-row: row2-start;
+      }
+    }
+    &--d {
+      grid-column: col1-start;
+      grid-row: row5-start;
+      @media only screen and (min-width: 830px) {
+        grid-column: col2-start;
+        grid-row: row3-start;
+      }
+      @media only screen and (min-width: 1180px) {
+        grid-column: col1-start;
+        grid-row: row3-start;
+      }
+      @media only screen and (min-width: 1360px) {
+        grid-column: col2-start;
+        grid-row: row2-start;
+      }
+    }
+    &--e {
+      grid-column: col1-start;
+      grid-row: row6-start;
+      @media only screen and (min-width: 830px) {
+        grid-column: col1-start;
+        grid-row: row4-start;
+      }
+      @media only screen and (min-width: 1180px) {
+        grid-column: col2-start;
+        grid-row: row3-start;
+      }
+      @media only screen and (min-width: 1360px) {
+        grid-column: col3-start;
+        grid-row: row2-start;
+      }
+    }
+    &--f {
+      grid-column: col1-start;
+      grid-row: row7-start;
+      @media only screen and (min-width: 830px) {
+        grid-column: col2-start;
+        grid-row: row4-start;
+      }
+      @media only screen and (min-width: 1180px) {
+        grid-column: col3-start;
+        grid-row: row3-start;
+      }
+      @media only screen and (min-width: 1360px) {
+        grid-column: col4-start;
+        grid-row: row2-start;
+      }
+    }
+  }
+}
+.box {
+  &__header {
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: $brand-dark-blue;
+  }
+  &__description {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 170%;
+    letter-spacing: -0.01em;
+    color: $text;
+  }
+}

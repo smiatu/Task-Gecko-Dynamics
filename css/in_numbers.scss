@@ -1,0 +1,106 @@
+@import "variables";
+
+.in-numbers {
+  height: auto;
+  min-height: 100%;
+  background-color: $brand-dark-blue;
+  background-image: url("../assets/backgrounds/background_main.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+  display: flex;
+  flex-wrap: wrap;
+  @media only screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+  color: white;
+  &__header {
+    font-size: 3.75rem;
+    font-weight: 800;
+    line-height: 3.75rem;
+    letter-spacing: -0.04em;
+    max-width: 100%;
+    @media only screen and (min-width: 1200px) {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 3.75rem;
+      letter-spacing: -0.04em;
+      max-width: 25.375rem;
+    }
+  }
+  &__description {
+    max-width: 100%;
+    margin: 1rem 0 3.25rem;
+    @media only screen and (min-width: 1200px) {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 170%;
+      letter-spacing: -0.01em;
+      max-width: 31.438rem;
+    }
+  }
+  &__numbers-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__number-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__number {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  &__number-description {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  &__section {
+    width: auto;
+    height: 100%;
+    padding: 3.125rem;
+    @media only screen and (min-width: 1360px) {
+      padding: 6.25rem;
+    }
+    &--right {
+      margin: 0 auto;
+      border: none;
+      padding: 3.125rem;
+      @media only screen and (min-width: 1360px) {
+        padding: 6.25rem;
+      }
+      @media only screen and (min-width: 1360px) {
+        border: 2.813rem solid $brand-yellow;
+        border-top: none;
+        border-radius: 0% 0% 50% 0%;
+        padding: 9.688rem;
+        margin-bottom: 6.25rem;
+        margin-right: 6.25rem;
+      }
+      .button--branded {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.313rem 2.5rem;
+        gap: 0.625rem;
+        width: 14.875rem;
+        height: 4.063rem;
+        margin: 3.125rem auto;
+      }
+      .in-numbers__number {
+        font-size: 7.5rem;
+        font-weight: 800;
+        line-height: 9.428rem;
+      }
+      .in-numbers__description {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.428rem;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+}
